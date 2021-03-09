@@ -1,4 +1,4 @@
-function FormAction({caption, onClick}){
+function PillBotton({type, text, click}){
   let myClasses = [
     "w-full",
     "flex",
@@ -20,14 +20,9 @@ function FormAction({caption, onClick}){
     "md:text-lg",
     "md:px-10"
   ];
-  return(
-    <button
-      onClick={onClick}
-      className={myClasses.join(" ")}
-    >
-      {caption}
-    </button>
+  return (
+    <button className={myClasses.join(" ")} type={type} onClick={click}>{text}</button>
   );
 }
 
-export default FormAction;
+export default PillBotton;
