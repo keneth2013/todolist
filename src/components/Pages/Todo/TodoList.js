@@ -11,12 +11,13 @@ function TodoListItem({descripcion, id, completed, doneHandler, deleteHandler}){
   }
 
   const styles = {
-    backgroundColor: "rgba(0,0,0,0.5)",
+    backgroundColor: "#c0c0c0",
     display: "flex",
     padding: "1rem",
     borderBottom: "",
     justifyContent:"space-between",
     alignItems:"center",
+    border:"1px",
   }
 
   const myClass = (completed)?"striked": "";
